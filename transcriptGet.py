@@ -2,7 +2,7 @@ from youtube_transcript_api import YouTubeTranscriptApi as yt
 import re
 
 # Insert YouTube URL video ID
-url = input("Enter YouTube Video Url: ")  # https://www.youtube.com/watch?v=7g1pmHSWHe0
+url = input("Enter YouTube Video URL: ")  # https://www.youtube.com/watch?v=7g1pmHSWHe0
 vid_id = url.split("=")[-1]
 data = yt.get_transcript(vid_id, languages=['en'])  # If en didn't work, try "en-US"
 
